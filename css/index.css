@@ -1,1 +1,161 @@
+*{
+    box-sizing: border-box;
+}
 
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.background{
+    background: url("../img/index-bg.png") no-repeat center center/cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.header{
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+#nav{
+    margin-top: 4px;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 1px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 5px;
+    align-items: center;
+}
+
+.list{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.listitems{
+    padding: 4px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.listitems:hover{
+    background-color:#61616182
+}
+
+#search{
+    border: 2px solid black;
+    padding: 4px;
+}
+
+#search input{
+    background-color: #cfd0d0;
+    border-color: #a7a7a7;
+    box-shadow: none;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 90%;
+    margin: 25px  auto;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-property: all;
+}
+
+.container:hover{
+    border: 2px solid black;
+    width: 95%;
+    margin: 30px auto;
+    background-color:rgba(224,224,224,0.5);
+}
+
+.container a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.image{
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.discription{
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+#active{
+    text-decoration: underline;
+}
+
+button{
+    cursor: pointer;
+}
+
+#donate-btn{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1;
+    opacity: 0.15;
+    height: 60px;
+    width: 160px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+#donate-btn:hover{
+    opacity: 1;
+}
+
+.heading{
+    text-align: center;
+}
