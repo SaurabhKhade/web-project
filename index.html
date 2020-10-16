@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all" />
 </head>
 <body>
+	<div id="loader">
+		<div id="outer">
+			<div id="middle">
+				<div id="inner"></div>
+			</div>
+		</div>
+	</div>
     <div class="background"></div>
     <header class="header">
         <h1>Title</h1>
@@ -60,5 +67,15 @@
             <li class="listitems"><a href="">Github</a></li>
         </ul>
     </footer>
+    
+    
+    <script type="text/javascript" charset="utf-8">
+    	function loader(){
+    		let load=document.getElementById('loader');
+    		load.style.display='none';
+    		load.style.zIndex='-50';
+    	}
+    	setTimeout(loader,5000);
+    </script>
 </body>
 </html>
