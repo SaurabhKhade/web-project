@@ -1,161 +1,220 @@
-*{
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
 
-body,html{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+body,html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
 }
 
-.background{
-    background: url("../img/index-bg.png") no-repeat center center/cover;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.4;
-    z-index: -1;
+#loader {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 50;
 }
 
-.header{
-    text-align: center;
-    background-color: black;
-    color: white;
-    border: 2px solid black;
-    padding: 5px;
+#outer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 14rem;
+	width: 14rem;
+	border-left: 3px solid blue;
+	border-radius: 50%;
+	animation-name: loader;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+#middle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 13rem;
+	width: 13rem;
+	border-top: 3px solid yellow;
+	border-radius: 50%;
+	animation-name: loader;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+#inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 12rem;
+	width: 12rem;
+	border-right: 3px solid red;
+	border-radius: 50%;
+	animation-name: loader;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes loader {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
-#nav{
-    margin-top: 4px;
-    background-color: black;
-    color: white;
-    position: sticky;
-    top: 1px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid black;
-    padding: 5px;
-    align-items: center;
+.background {
+	background: url("../img/index-bg.png") no-repeat center center/cover;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0.4;
+	z-index: -1;
 }
 
-.list{
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
+.header {
+	text-align: center;
+	background-color: black;
+	color: white;
+	border: 2px solid black;
+	padding: 5px;
 }
 
-.listitems{
-    padding: 4px;
+#nav {
+	margin-top: 4px;
+	background-color: black;
+	color: white;
+	position: sticky;
+	top: 1px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border: 2px solid black;
+	padding: 5px;
+	align-items: center;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-    margin-right: 10px;
+.list {
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
 }
 
-a:hover{
-    font-weight: bold;
-    text-decoration: underline;
+.listitems {
+	padding: 4px;
 }
 
-.listitems:hover{
-    background-color:#61616182
+a {
+	text-decoration: none;
+	color: white;
+	margin-right: 10px;
 }
 
-#search{
-    border: 2px solid black;
-    padding: 4px;
+a:hover {
+	font-weight: bold;
+	text-decoration: underline;
 }
 
-#search input{
-    background-color: #cfd0d0;
-    border-color: #a7a7a7;
-    box-shadow: none;
+.listitems:hover {
+	background-color: #61616182
 }
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 10px;
-    width: 90%;
-    margin: 25px  auto;
-    transition-duration: 0.51s;
-    transition-timing-function: linear;
-    transition-property: all;
+#search {
+	border: 2px solid black;
+	padding: 4px;
 }
 
-.container:hover{
-    border: 2px solid black;
-    width: 95%;
-    margin: 30px auto;
-    background-color:rgba(224,224,224,0.5);
+#search input {
+	background-color: #cfd0d0;
+	border-color: #a7a7a7;
+	box-shadow: none;
 }
 
-.container a{
-    color: #000000;
-    text-decoration: none;
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 10px;
+	width: 90%;
+	margin: 25px  auto;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+	transition-property: all;
 }
 
-.image{
-    display: inline-block;
-    width: 25%;
-    height: 100%;
-    border: 2px solid black;
+.container:hover {
+	border: 2px solid black;
+	width: 95%;
+	margin: 30px auto;
+	background-color: rgba(224,224,224,0.5);
 }
 
-.discription{
-    display: inline-block;
-    width: 70%;
-    height: 100%;
+.container a {
+	color: #000000;
+	text-decoration: none;
 }
 
-#footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
+.image {
+	display: inline-block;
+	width: 25%;
+	height: 100%;
+	border: 2px solid black;
 }
 
-#active{
-    text-decoration: underline;
+.discription {
+	display: inline-block;
+	width: 70%;
+	height: 100%;
 }
 
-button{
-    cursor: pointer;
+#footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	color: white;
 }
 
-#donate-btn{
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    bottom: 30px;
-    right: 30px;
-    z-index: 1;
-    opacity: 0.15;
-    height: 60px;
-    width: 160px;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 5px;
-    background-color: black;
-    color: white;
-    transition-property: all;
-    transition-duration: 0.51s;
-    transition-timing-function: linear;
+#active {
+	text-decoration: underline;
 }
 
-#donate-btn:hover{
-    opacity: 1;
+button {
+	cursor: pointer;
 }
 
-.heading{
-    text-align: center;
+#donate-btn {
+	display: flex;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	bottom: 30px;
+	right: 30px;
+	z-index: 1;
+	opacity: 0.15;
+	height: 60px;
+	width: 160px;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 5px;
+	background-color: black;
+	color: white;
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+#donate-btn:hover {
+	opacity: 1;
+}
+
+.heading {
+	text-align: center;
 }
