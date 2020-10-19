@@ -1,1 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
 
+body{
+	/* background-color: rgb(0,0,0); */
+}
+
+.heading {
+	width: 90%;
+	margin: 20px auto;
+	text-align: center;
+	color: rgb(255,255,255);
+	font-size: 1.8rem;
+}
+
+.section {
+	margin: 20px auto;
+	width: 90%;
+	border: 2px solid black;
+	padding: 15px 20px;
+}
+
+.section p {
+	font-size: 0.8rem;
+	margin-top: 8px;
+}
+.section h2 {
+	text-align: center;
+}
+
+.section h5 {
+	text-align: center;
+}
+
+.section h6 {
+	text-align: left;
+	margin-left: 30px;
+}
+
+.content {
+	margin-top: 30px;
+	padding: 10px 20px;
+}
+
+.content p {
+	font-size: 0.76rem;
+}
+
+hr {
+	border-color: white;
+	background-color: white;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 3px;
+}
+
+span {
+	font-weight: bold;
+}
+
+#khasipic {
+	height: 200px;
+	width: 80%;
+	margin: auto;
+	border: 2px solid  black;
+	background: url('../img/khasi.jpg') no-repeat center center/cover;
+}
+
+#members {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	justify-content: space-evenly;
+}
+
+.team-member {
+	width: 30%;
+	margin: 10px auto;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.image img {
+	width: 70%;
+	height: 150px;
+	border: 2px solid black;
+	margin-left: 15%;
+}
+
+.info {
+	padding: 10px;
+}
+
+#our-team,#what-we-do,#why-we-do{
+	background-color: rgb(20,20,20);
+	color: white;
+}
+
+#bg{
+	background: url('../img/about-bg.jpg') no repeat;
+	background-size: 100%;
+}
