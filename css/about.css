@@ -45,6 +45,10 @@
 	font-size: 0.76rem;
 }
 
+.section ol li{
+	font-size: 0.8rem;
+}
+
 hr {
 	border-color: black;
 	background-color: black;
@@ -95,7 +99,7 @@ span {
 }
 
 #our-team,#what-we-do,#why-we-do{
-	background-color: rgba(164,164,164,0.65);
+	background-color: rgba(164,164,164,0.7);
 	color: black;
 }
 
@@ -109,11 +113,41 @@ span {
 	z-index: -1;
 }
 
-ul li{
-	margin-left:20px;
-	
+#why-we-do .list{
+	margin:  15px 20px;
 }
 
-.section ol{
-	margin:20px;
+#why-we-do .list .item{
+	margin: 10px 15px;
+}
+
+.why-images{
+	width: 60%;
+	margin: auto;
+	height: 200px;
+	border: 2px solid black;
+}
+
+#climate{
+	background: url('../img/climate.jpg') no-repeat center center/cover;
+}
+
+#health{
+	background: url('../img/health.jpg') no-repeat center center/cover;
+}
+
+#soil{
+	background: url('../img/soil.jpg') no-repeat center center/cover;
+}
+
+#wild{
+	background: url('../img/wildlife.webp') no-repeat center center/cover;
+}
+
+#water{
+	background: url('../img/water.jpg') no-repeat center center/cover;
+}
+
+.list > ol > li{
+	font-size: 1rem;
 }
