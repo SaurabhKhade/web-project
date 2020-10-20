@@ -151,3 +151,25 @@ span {
 .list > ol > li{
 	font-size: 1rem;
 }
+
+
+#nav{
+	display: flex;
+	align-items: center;
+	background-color: rgba(0,0,0,0.5);
+	padding: 20px 10px;
+	position: sticky;
+	top: 0;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+#nav a{
+	margin-right: 15px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+#nav a:hover{
+	text-decoration: underline;
+}
