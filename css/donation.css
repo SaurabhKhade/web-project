@@ -5,6 +5,18 @@
 	box-sizing: border-box;
 	font-weight: bold;
 }
+.background{
+	height: 100vh;
+	width: 100%;
+	
+	top:0;
+	left:0;
+	z-index:-15;
+	background-position: center;
+	background-size: cover;
+	box-sizing: border-box;
+	position: fixed;
+	background-image: url('../img/background.png');
 body {
 	font-family: montserrat;
 	background-image: url("bg2.jpg");
@@ -124,4 +136,11 @@ form{
 h{
 	font-family: Monospace;
 }
+	h1{
+	font-family: 'Rubik', sans-serif;
+}
+h2{
+	font-family: 'Work Sans', sans-serif;
+}
+
 
