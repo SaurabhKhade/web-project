@@ -266,6 +266,7 @@ button {
 details summary{
 	margin-right: 10px;
 	color: cyan;
+	cursor:pointer;
 }
 
 details summary::-webkit-details-marker {
