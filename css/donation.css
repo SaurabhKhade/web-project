@@ -6,15 +6,12 @@
 	font-weight: bold;
 }
 .background{
-	height: 100vh;
+	height: 100%;
 	width: 100%;
-	
 	top:0;
 	left:0;
 	z-index:-15;
 	background-position: center;
-	background-size: cover;
-	box-sizing: border-box;
 	position: fixed;
 	background-image: url('../img/background.png');
 body {
@@ -135,12 +132,6 @@ form{
 
 h{
 	font-family: Monospace;
-}
-	h1{
-	font-family: 'Rubik', sans-serif;
-}
-h2{
-	font-family: 'Work Sans', sans-serif;
 }
 
 
