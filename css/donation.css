@@ -24,6 +24,7 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	font-family: 'Work Sans', sans-serif;
 }
 nav {
 	background: rgba(28, 0, 128, 0);
