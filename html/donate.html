@@ -1,71 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="../css/donation.css">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Green Planet - donation</title>
+	<link rel="stylesheet" href="../css/donation.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik&family=Work+Sans&display=swap" rel="stylesheet"> 
+</head>
+
 <link rel="icon" href="../img/download1.jpg" type="image/icon">
-<body style="background-image: url(../img/background.png);" id="body">
-	<form action="submited.html" autocomplete="on" method="GET" id="form">
-		<h1 style="color:black">Great futures are built with a small <span style="font-weight:bold;">charity</span>, let's go!</h1><br /><br />
-		<h1 style="color:black">Donor Information</h1>
-		<label for="f-name" style="color:rgb(5, 19, 2);">
-			<br><br> FULL NAME<br>
-		</label>
-		<input type="text" id="f-name" name="f-name" placeholder="eg. abcd wxyz">
-		<br><br>
-		<label for="e-mail" style="color:rgb(5, 19, 2);">
-			E-MAIL ADDRESS<br>
-		</label>
-		<input type="email" id="e-mail" name="e-mail" placeholder="eg. abcxyz123@gmail.com">
-		<br><br>
-		<label for="co-no" style="color:rgb(5, 19, 2);">
-			CONTACT NUMBER<br>
-		</label>
-		<input type="number" id="co-no" name="co-no" placeholder="eg. 0123456789">
-		<br><br><br>
-		<label for="city" style="color:rgb(5, 19, 2);">
-			CITY<br>
-		</label>
-		<input type="text" id="city" style="color:rgb(5, 19, 2);" placeholder="eg. India">
-		<br><br><br>
-		<h1 style="color:black">Payment Information</h1>
-		<br><br>
-		<label for="card-number" style="color:rgb(5, 19, 2);">
-			CARD NUMBER<br>
-		</label>
-		<input type="text" id="card-number" style="color:rgb(5, 19, 2);" placeholder="eg. xxxx-xxxx-xxxx-xxxx">
-		<br><br>
-		<label for="date" style="color:rgb(5, 19, 2);">
-			DATE
-		</label><br>
-		<input type="date" id="date" style="color:rgb(5, 19, 2);" placeholder="tap to select date">
-		<br><br>
-		<P style="color:rgb(5, 19, 2);font-size: 15px;">AMOUNT</P>
-		<select id="amount" name="amount">
-			<option value="0">Select Amount</option>
-			<option value="1">100 Rs</option>
-			<option value="2">500 Rs</option>
-			<option value="3">1000 Rs</option>
-			<option value="4">5000 Rs</option>
-			<option value="5">10000 Rs</option>
-		</select>
-		<br><br>
-		<label for="cvv" style="color:rgb(5, 19, 2);">
-			CARD VERIFICATION VALUE
-		</label><br />
-		<input type="number" id="cvv" style="color:rgb(5, 19, 2);" placeholder="CVV (OTP)">
-		<br><br>
-		<label for="referral" style="color:rgb(5, 19, 2);">
-			REFERENCE CODE (if you have)
-		</label><br />
-		<input type="text" id="referral" style="color:rgb(5, 19, 2);" placeholder="Reference Code">
-		<br><br>
-		<input type="submit" value="Donate Now">
-	</form>
-	<script type="text/javascript" charset="utf-8">
-		let form = document.getElementById('form');
-		let screenWidth = parseInt(screen.width);
-		let formWidth = parseInt(getComputedStyle(form));
-		let margin = `${(screenWidth-formWidth)/2}px`;
-		form.style.marginLeft = margin;
-	</script>
+
+
+
+<body >
+
+ <div class="background">
+
+ </div>
+
+<form action="submited.html" autocomplete="on" method="GET" id="form">
+	<h1 style="color:black">Great futures are built with a small <span style="font-weight:bold;">charity</span>,
+		let's go!</h1><br /><br />
+	<h2 style="color:black">Donor Information</h2>
+	<label for="f-name" style="color:rgb(5, 19, 2);">
+		<br><br> FULL NAME<br>
+	</label>
+	<input type="text" id="f-name" name="f-name" placeholder="eg. abcd wxyz">
+	<br><br>
+	<label for="e-mail" style="color:rgb(5, 19, 2);">
+		E-MAIL ADDRESS<br>
+	</label>
+	<input type="email" id="e-mail" name="e-mail" placeholder="eg. abcxyz123@gmail.com">
+	<br><br>
+	<label for="co-no" style="color:rgb(5, 19, 2);">
+		CONTACT NUMBER<br>
+	</label>
+	<input type="number" id="co-no" name="co-no" placeholder="eg. 0123456789">
+	<br><br><br>
+	<label for="city" style="color:rgb(5, 19, 2);">
+		CITY<br>
+	</label>
+	<input type="text" id="city" style="color:rgb(5, 19, 2);" placeholder="eg. India">
+	<br><br><br>
+	<h2 style="color:black">Payment Information</h2>
+	<br><br>
+	<label for="card-number" style="color:rgb(5, 19, 2);">
+		CARD NUMBER<br>
+	</label>
+	<input type="text" id="card-number" style="color:rgb(5, 19, 2);" placeholder="eg. xxxx-xxxx-xxxx-xxxx">
+	<br><br>
+	<label for="date" style="color:rgb(5, 19, 2);">
+		DATE
+	</label><br>
+	<input type="date" id="date" style="color:rgb(5, 19, 2);" placeholder="tap to select date">
+	<br><br>
+	<P style="color:rgb(5, 19, 2);font-size: 15px;">AMOUNT</P>
+	<select id="amount" name="amount">
+		<option value="0">Select Amount</option>
+		<option value="1">100 Rs</option>
+		<option value="2">500 Rs</option>
+		<option value="3">1000 Rs</option>
+		<option value="4">5000 Rs</option>
+		<option value="5">10000 Rs</option>
+	</select>
+	<br><br>
+	<label for="cvv" style="color:rgb(5, 19, 2);">
+		CARD VERIFICATION VALUE
+	</label><br />
+	<input type="number" id="cvv" style="color:rgb(5, 19, 2);" placeholder="CVV (OTP)">
+	<br><br>
+	<label for="referral" style="color:rgb(5, 19, 2);">
+		REFERENCE CODE (if you have)
+	</label><br />
+	<input type="text" id="referral" style="color:rgb(5, 19, 2);" placeholder="Reference Code">
+	<br><br>
+	<input type="submit" value="Donate Now">
+</form>
+<script type="text/javascript" charset="utf-8">
+	let form = document.getElementById('form');
+	let screenWidth = parseInt(screen.width);
+	let formWidth = parseInt(getComputedStyle(form));
+	let margin = `${(screenWidth - formWidth) / 2}px`;
+	form.style.marginLeft = margin;
+</script>
 </body>
+
 </html>
