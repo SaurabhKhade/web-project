@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Donation successful</title>
+	<style type="text/css" media="all">
+		.background {
+			height: 100vh;
+			width: 100%;
+			top: 0;
+			left: 0;
+			z-index: -15;
+			background-position: center;
+			background-size: cover;
+			box-sizing: border-box;
+			position: fixed;
+			background-image: url('../img/background.png');
+		}
+		#first,#second,#third{
+			margin-bottom: 5px;
+		}
+		#first{
+			font-size: 2rem;
+			margin-bottom: 5px;
+		}
+		#second{
+			font-size: 1.6rem;
+		}
+		#third{
+			font-size: 1.4rem;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+		#box{
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+	</style>
+</head>
+<body>
+	<div class="background"></div>
+	<div id="box">
+		<span id="first">Your responses has submitted successfully</span>
+		<span id="second">Thanks for your contribution, your small help can protect countless trees</span>
+		<span id="third"><a href="./donate.html">&#8592;Back</a></span>
+	</div>
+</body>
+</html>
