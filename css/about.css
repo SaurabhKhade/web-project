@@ -20,7 +20,7 @@
 }
 
 .section p {
-	font-size: 0.8rem;
+	font-size: 0.999rem;
 	margin-top: 8px;
 }
 .section h2 {
@@ -34,6 +34,7 @@
 .section h6 {
 	text-align: left;
 	margin-left: 30px;
+	font-size: 0.9rem;
 }
 
 .content {
@@ -42,7 +43,7 @@
 }
 
 .content p {
-	font-size: 0.76rem;
+	font-size: 0.999rem;
 }
 
 .section ol li{
@@ -87,8 +88,8 @@ span {
 }
 
 .image img {
-	width: 70%;
-	height: 150px;
+	width: 100%;
+	height: 142px;
 	border: 2px solid black;
 	margin-left: 15%;
 }
@@ -99,7 +100,7 @@ span {
 }
 
 #our-team,#what-we-do,#why-we-do{
-	background-color: rgba(164,164,164,0.7);
+	background-color: rgba(198, 241, 128, 0.61);
 	color: black;
 }
 
@@ -115,6 +116,7 @@ span {
 
 #why-we-do .list{
 	margin:  15px 20px;
+	
 }
 
 #why-we-do .list .item{
@@ -128,9 +130,12 @@ span {
 	border: 2px solid black;
 }
 
+
 #climate{
 	background: url('../img/climate.jpg') no-repeat center center/cover;
+	
 }
+
 
 #health{
 	background: url('../img/health.jpg') no-repeat center center/cover;
@@ -169,7 +174,26 @@ span {
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
 }
 #nav a:hover{
 	text-decoration: underline;
+
+}
+
+h1{
+	
+	font-family: 'Rubik', sans-serif;
+	color: black;
+}
+h2{
+	font-family: 'Work Sans', sans-serif;
+	color: rgb(8, 20, 1);
+}
+h5{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.item ul li {
+	font-size: 0.999rem;
 }
