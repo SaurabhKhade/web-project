@@ -161,20 +161,23 @@ span {
 #nav{
 	display: flex;
 	align-items: center;
-	background-color: rgba(0,0,0,0.5);
-	padding: 20px 10px;
+	background-image: linear-gradient(to right,rgb(22, 17, 6)35%,rgba(198, 241, 128, 0.521)55% );
+	padding: 25px 50px;
 	position: sticky;
 	top: 0;
-	justify-content: flex-end;
 	width: 100%;
+	
+	
+	
 }
 
 #nav a{
 	margin-right: 15px;
 	text-decoration: none;
-	color: white;
+	color: rgb(221, 243, 187);
 	font-weight: bold;
 	font-family: 'Open Sans', sans-serif;
+
 }
 #nav a:hover{
 	text-decoration: underline;
@@ -188,7 +191,8 @@ h1{
 }
 h2{
 	font-family: 'Work Sans', sans-serif;
-	color: rgb(8, 20, 1);
+	color: rgb(121, 6, 6);
+	
 }
 h5{
 	font-family: 'Open Sans', sans-serif;
