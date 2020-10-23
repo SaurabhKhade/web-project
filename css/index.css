@@ -83,9 +83,9 @@ body,html {
 
 .header {
 	text-align: center;
-	background-color: black;
+	background-color: rgb(22, 17, 6);
 	color: white;
-	border: 2px solid black;
+	border: 1px solid black;
 	padding: 5px;
 	vertical-align: middle;
 }
@@ -96,18 +96,19 @@ img {
 }
 
 #nav {
-	background-color: black;
+	background-color: rgb(22, 17, 6);
 	color: white;
-	position:relative;
+	position: sticky;
 	top: 0;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	border: 2px solid black;
+	border: 1px solid black;
 	padding: 5px;
 	align-items: center;
 	font-family: Arial;
 	font-size: larger;
+	
 }
 
 .list {
@@ -184,6 +185,7 @@ a:hover {
 	display: inline-block;
 	width: 70%;
 	height: 100%;
+	
 }
 
 
@@ -266,9 +268,23 @@ button {
 details summary{
 	margin-right: 10px;
 	color: cyan;
-	cursor:pointer;
 }
 
 details summary::-webkit-details-marker {
 	display: none;
+}
+h1{
+	
+	font-family: 'Rubik', sans-serif;
+	
+}
+h3{
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(121, 6, 6);
+}
+.navbar a {
+	color: rgb(221, 243, 187);
+}
+.navbar summary{
+	color: rgb(221, 243, 187);
 }
