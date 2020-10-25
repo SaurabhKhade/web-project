@@ -87,11 +87,14 @@ span {
 	align-items: center;
 }
 
+.image{
+	width: 70%;
+}
+
 .image img {
 	width: 100%;
 	height: 142px;
 	border: 2px solid black;
-	margin-left: 15%;
 }
 
 .info {
